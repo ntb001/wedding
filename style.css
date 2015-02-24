@@ -98,3 +98,6 @@ div#card img {
 p.slim {
   margin: 0;
 }
+p.center {
+  text-align: center;
+}
