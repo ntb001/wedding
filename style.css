@@ -8,15 +8,30 @@ h1, h2, #header, #card {
   color: #191970;
 }
 #header {
-  margin: 10px;
+  margin-bottom: 10px;
   width: 100%;
   font-size: 3em;
   text-align: center;
 }
 #content {
   width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
   padding: 20px;
-  border: 5px solid #191970;
+  background-color: #F0F8FF;
+  border-radius: 8px;
+}
+figure {
+  text-align: center;
+  margin: 15px auto 30px auto;
+}
+figure img {
+  max-width: 80%;
+  border: 15px solid #FFFFFF;
+}
+figcaption {
+  margin-top: 5px;
 }
 #nav {
   width: 80%;
