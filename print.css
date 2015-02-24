@@ -1,0 +1,19 @@
+div#content {
+  margin-top: 0;
+}
+h1, h2, div#header, div#card {
+  color: #000000;
+}
+nav {
+  position: relative;
+}
+nav a {
+  display: none;
+}
+nav strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2em;
+  color: #000000;
+}
