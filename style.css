@@ -1,27 +1,32 @@
 @import url('http://fonts.googleapis.com/css?family=Ovo');
 
 body {
+  -webkit-text-size-adjust: 100%;
   font-family: 'Ovo', serif;
 }
-h1, h2, div#header, div#card {
+h1, h2, #header, #card {
   color: #191970;
 }
 h2 {
   margin-bottom: 5px;
 }
-div#header {
+#header {
   margin-top: 20px;
   margin-bottom: 10px;
   width: 100%;
   font-size: 3em;
   text-align: center;
 }
-div#content {
-  width: 76%;
+#content, #nav {
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 950px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
-  padding: 4%;
+}
+#content {
+  margin-top: 20px;
+  padding: 40px;
   background-color: #F0F8FF;
   border-radius: 8px;
 }
@@ -37,13 +42,9 @@ figcaption {
   margin-top: 5px;
   font-size: 80%;
 }
-div#nav {
-  width: 84%;
-  margin-left: auto;
-  margin-right: auto;
-}
 nav {
   width: 100%;
+  min-height: 40px;
   text-align: center;
   background-color: #191970;
   border-radius: 8px;
@@ -51,7 +52,8 @@ nav {
 }
 nav ul {
   height: auto;
-  padding: 0;
+  padding-top: 10px;
+  padding-left: 0;
   margin: 0;
 }
 nav li {
@@ -64,12 +66,12 @@ nav a {
   margin: 8px;
   text-decoration: none;
 }
-nav a:hover, a#navLoc {
+nav a:hover, #navLoc {
   padding-bottom: 4px;
   font-weight: normal;
   border-bottom: 1px solid #FFFFFF;
 }
-div#card {
+#card {
   margin: 40px;
   padding: 40px;
   width: 420px;
@@ -81,70 +83,67 @@ div#card {
   text-align: center;
   box-shadow: 0 8px 6px -6px black
 }
-div#card h1 {
+#card h1 {
   font-weight: normal;
   margin: 0;
 }
-div#card h2 {
+#card h2 {
   font-weight: normal;
   margin: 0;
 }
-div#card img {
+#card img {
   padding-bottom: 20px;
 }
-p.slim {
+.slim {
   margin: 0;
 }
-p.center {
+.center {
   text-align: center;
 }
-@media screen and (max-width: 720px) {
-  div#header {
+@media screen and (max-width: 740px) {
+  #header {
     font-size: 2.5em;
   }
-  div#content {
-    width: 86%;
-    margin-top: 20px;
+  #content, #nav {
+    width: 90%;
   }
-  div#nav {
-    width: 94%;
+  #content {
+    padding: 20px;
   }
   nav li {
     padding: 1px;
   }
-  div#card {
+  #card {
     width: 380px;
   }
 }
-@media screen and (min-width: 480px) {
-  nav {
-    height: 40px;
-  }
-  nav ul {
-    padding: 10px 0;
-  }
-}
 @media screen and (max-width: 479px) {
-  div#header {
+  #header {
     font-size: 2em;
+  }
+  #content {
+    font-size: 120%;
   }
   figure img {
     border-style: none;
   }
-  div#nav {
+  #nav {
     width: 150px;
   }
   nav {
     max-height: 250px;
     transition: max-height 0.3s ease-in-out;
   }
-  nav a:hover, a#navLoc {
+  nav a:hover, #navLoc {
     border-style: none;
   }
   nav.hideNav {
     max-height: 45px;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
+  }
+  nav ul {
+    padding-top: 0;
   }
   nav li {
     padding: 12px;
@@ -169,7 +168,7 @@ p.center {
       0 0.25em 0 0 white,
       0 0.5em 0 0 white;
   }
-  div#card {
+  #card {
     width: 100%;
     padding-left: 2px;
     padding-right: 2px;
