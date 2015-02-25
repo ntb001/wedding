@@ -1,6 +1,6 @@
 div#content {
   margin-top: 0;
-  padding-bottom: 0;
+  padding: 0;
   background-color: transparent;
 }
 h1, h2, div#header, div#card {
