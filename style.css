@@ -121,6 +121,9 @@ p.center {
   div#header {
     font-size: 2em;
   }
+  figure img {
+    border-style: none;
+  }
   div#nav {
     width: 150px;
   }
