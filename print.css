@@ -4,7 +4,7 @@ div#content {
   background-color: transparent;
 }
 h1, h2, div#header, div#card {
-  color: #000000;
+  color: black;
 }
 nav {
   position: relative;
@@ -13,12 +13,13 @@ nav {
 nav a {
   display: none;
 }
-nav strong {
+a#navLoc {
+  display: block;
   position: absolute;
   top: 0;
   left: -10px;
   font-size: 2em;
-  color: #000000;
+  color: black;
 }
 figure img {
   border-style: none;

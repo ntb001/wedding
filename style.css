@@ -59,18 +59,15 @@ nav li {
   padding: 18px;
   color: #FFFFFF;
 }
-nav a, nav strong {
+nav a {
   color: #FFFFFF;
   margin: 8px;
   text-decoration: none;
 }
-nav a:hover, nav strong {
+nav a:hover, a#navLoc {
   padding-bottom: 4px;
   font-weight: normal;
   border-bottom: 1px solid #FFFFFF;
-}
-a#navLoc:hover {
-  border-style: none;
 }
 div#card {
   margin: 40px;
@@ -171,6 +168,9 @@ p.center {
     box-shadow:
       0 0.25em 0 0 white,
       0 0.5em 0 0 white;
+  }
+  a#navLoc:hover {
+    border-style: none;
   }
   div#card {
     width: 100%;
