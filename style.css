@@ -2,7 +2,6 @@
 
 body {
   font-family: 'Ovo', serif;
-  padding-top: 20px;
 }
 h1, h2, div#header, div#card {
   color: #191970;
@@ -11,6 +10,7 @@ h2 {
   margin-bottom: 5px;
 }
 div#header {
+  margin-top: 20px;
   margin-bottom: 10px;
   width: 100%;
   font-size: 3em;
@@ -44,7 +44,6 @@ div#nav {
 }
 nav {
   width: 100%;
-  height: 40px;
   text-align: center;
   background-color: #191970;
   border-radius: 8px;
@@ -52,7 +51,7 @@ nav {
 }
 nav ul {
   height: auto;
-  padding: 10px 0;
+  padding: 0;
   margin: 0;
 }
 nav li {
@@ -69,6 +68,9 @@ nav a:hover, nav strong {
   padding-bottom: 4px;
   font-weight: normal;
   border-bottom: 1px solid #FFFFFF;
+}
+a#navLoc:hover {
+  border-style: none;
 }
 div#card {
   margin: 40px;
@@ -99,7 +101,7 @@ p.slim {
 p.center {
   text-align: center;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   div#header {
     font-size: 2.5em;
   }
@@ -117,6 +119,14 @@ p.center {
     width: 380px;
   }
 }
+@media screen and (min-width: 480px) {
+  nav {
+    height: 40px;
+  }
+  nav ul {
+    padding: 10px 0;
+  }
+}
 @media screen and (max-width: 479px) {
   div#header {
     font-size: 2em;
@@ -128,11 +138,39 @@ p.center {
     width: 150px;
   }
   nav {
-    height: auto;
+    max-height: 250px;
+    transition: max-height 0.3s ease-in-out;
+  }
+  nav a:hover, nav strong {
+    border-style: none;
+  }
+  nav.hideNav {
+    max-height: 45px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
   }
   nav li {
-    padding: 8px;
+    padding: 12px;
     display: block;
+  }
+  li.hideNav {
+    display: none;
+  }
+  #navLoc {
+    position: relative;
+    padding-left: 1.25em;
+  }
+  #navLoc:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 1em;
+    height: 0.15em;
+    background: white;
+    box-shadow:
+      0 0.25em 0 0 white,
+      0 0.5em 0 0 white;
   }
   div#card {
     width: 100%;
