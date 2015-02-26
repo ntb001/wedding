@@ -17,7 +17,7 @@ h2 {
   font-size: 3em;
   text-align: center;
 }
-#content, #nav {
+#content, nav {
   box-sizing: border-box;
   width: 95%;
   max-width: 950px;
@@ -34,7 +34,7 @@ figure {
   text-align: center;
   margin: 0;
 }
-figure img {
+#hero {
   box-sizing: border-box;
   max-width: 100%;
   border: 15px solid #FFFFFF;
@@ -44,7 +44,6 @@ figcaption {
   font-size: 80%;
 }
 nav {
-  width: 100%;
   min-height: 40px;
   text-align: center;
   background-color: #191970;
@@ -73,11 +72,11 @@ nav a:hover, #navLoc {
   border-bottom: 1px solid #FFFFFF;
 }
 #card {
-  margin: 40px;
-  padding: 40px;
-  width: 420px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  padding: 40px;
+  width: 420px;
   background-image: url(cardstock.jpg);
   background-repeat: repeat;
   font-family: 'English Pressed', 'Snell Roundhand', 'Brush Script MT', cursive;
@@ -122,23 +121,17 @@ nav a:hover, #navLoc {
   #content {
     font-size: 120%;
   }
-  figure img {
+  #hero {
     border-style: none;
   }
-  #nav {
-    width: 150px;
-  }
   nav {
+    width: 150px;
     max-height: 250px;
     transition: max-height 0.3s ease-in-out;
   }
-  nav a:hover, #navLoc {
-    border-style: none;
-  }
-  nav.hideNav {
+  .shrinkNav {
     max-height: 45px;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
   }
   nav ul {
     padding-top: 0;
@@ -150,11 +143,15 @@ nav a:hover, #navLoc {
   li.hideNav {
     display: none;
   }
+  nav a:hover, #navLoc {
+    border-style: none;
+  }
   #navLoc {
     position: relative;
     padding-left: 1.5em;
   }
   #navLoc:before {
+    /* draw hamburger */
     content: "";
     position: absolute;
     left: 0;

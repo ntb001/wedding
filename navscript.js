@@ -12,11 +12,11 @@ link.addEventListener('click', function(e) {
     nav2.classList.toggle('hideNav');
     nav3.classList.toggle('hideNav');
     nav4.classList.toggle('hideNav');
-    menu.classList.toggle('hideNav');
+    menu.classList.toggle('shrinkNav');
   }
   else {
     //hide
-    menu.classList.toggle('hideNav');
+    menu.classList.toggle('shrinkNav');
     setTimeout(function() {
       nav1.classList.toggle('hideNav');
       nav2.classList.toggle('hideNav');
