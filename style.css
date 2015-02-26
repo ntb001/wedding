@@ -19,7 +19,7 @@ h2 {
 }
 #content, #nav {
   box-sizing: border-box;
-  width: 80%;
+  width: 95%;
   max-width: 950px;
   margin-left: auto;
   margin-right: auto;
@@ -104,9 +104,6 @@ nav a:hover, #navLoc {
 @media screen and (max-width: 740px) {
   #header {
     font-size: 2.5em;
-  }
-  #content, #nav {
-    width: 90%;
   }
   #content {
     padding: 20px;
