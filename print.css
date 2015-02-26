@@ -1,19 +1,19 @@
-div#content {
+#content {
   margin-top: 0;
   padding: 10px 0 0 0;
   background-color: transparent;
 }
-h1, h2, div#header, div#card {
+h1, h2, #header, #card {
   color: black;
 }
-nav {
+.nav {
   position: relative;
   background-color: transparent;
 }
-nav a {
+.nav a {
   display: none;
 }
-a#navLoc {
+#navLoc {
   display: block;
   position: absolute;
   top: 0;
@@ -21,6 +21,6 @@ a#navLoc {
   font-size: 2em;
   color: black;
 }
-figure img {
+#hero {
   border-style: none;
 }

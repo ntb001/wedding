@@ -17,7 +17,7 @@ h2 {
   font-size: 3em;
   text-align: center;
 }
-#content, nav {
+#content, .nav {
   box-sizing: border-box;
   width: 95%;
   max-width: 950px;
@@ -43,30 +43,30 @@ figcaption {
   margin-top: 5px;
   font-size: 80%;
 }
-nav {
+.nav {
   min-height: 40px;
   text-align: center;
   background-color: #191970;
   border-radius: 8px;
   font-family: 'Ovo', serif;
 }
-nav ul {
+.nav ul {
   height: auto;
   padding-top: 10px;
   padding-left: 0;
   margin: 0;
 }
-nav li {
+.nav li {
   display: inline;
   padding: 18px;
   color: #FFFFFF;
 }
-nav a {
+.nav a {
   color: #FFFFFF;
   margin: 8px;
   text-decoration: none;
 }
-nav a:hover, #navLoc {
+.nav a:hover, #navLoc {
   padding-bottom: 4px;
   font-weight: normal;
   border-bottom: 1px solid #FFFFFF;
@@ -107,7 +107,7 @@ nav a:hover, #navLoc {
   #content {
     padding: 20px;
   }
-  nav li {
+  .nav li {
     padding: 1px;
   }
   #card {
@@ -124,7 +124,7 @@ nav a:hover, #navLoc {
   #hero {
     border-style: none;
   }
-  nav {
+  .nav {
     width: 150px;
     max-height: 250px;
     transition: max-height 0.3s ease-in-out;
@@ -133,17 +133,17 @@ nav a:hover, #navLoc {
     max-height: 45px;
     overflow: hidden;
   }
-  nav ul {
+  .nav ul {
     padding-top: 0;
   }
-  nav li {
+  .nav li {
     padding: 12px;
     display: block;
   }
   li.hideNav {
     display: none;
   }
-  nav a:hover, #navLoc {
+  .nav a:hover, #navLoc {
     border-style: none;
   }
   #navLoc {
