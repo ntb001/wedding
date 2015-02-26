@@ -35,7 +35,8 @@ figure {
   margin: 0;
 }
 figure img {
-  max-width: 90%;
+  box-sizing: border-box;
+  max-width: 100%;
   border: 15px solid #FFFFFF;
 }
 figcaption {
